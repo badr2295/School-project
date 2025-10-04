@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>صفحة تجريبية بسيطة</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;display:flex;flex-direction:column;min-height:100vh;margin:0}
+    header,footer{background:#222;color:#fff;padding:12px;text-align:center}
+    main{flex:1;padding:24px;text-align:center}
+    .card{display:inline-block;padding:16px;border:1px solid #ddd;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    button{margin-top:12px;padding:8px 14px;border:0;border-radius:6px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <header>عنوان الموقع</header>
+  <main>
+    <div class="card">
+      <h1>مرحباً</h1>
+      <p>هذه صفحة HTML بسيطة تحتوي على نص وزر تجريبي.</p>
+      <button id="myBtn">اضغطني</button>
+    </div>
+  </main>
+  <footer>حقوق الطبع © 2025</footer>
+
+  <script>
+    document.getElementById('myBtn').addEventListener('click', function(){
+      alert('تم الضغط. رائع.');
+    });
+  </script>
+</body>
+</html>
